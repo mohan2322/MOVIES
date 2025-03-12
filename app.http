@@ -10,4 +10,24 @@ Content-Type: application/json
   "leadActor": "Jeff Goldblum"
 }
 ###
-GET http://localhost:3000/movies/1/
+GET http://localhost:3000/movies/56/
+
+###
+PUT http://localhost:3000/movies/56/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Iron man",
+  "leadActor": "Robbert Downey"
+}
+###
+DELETE http://localhost:3000/movies/56/
+
+###
+
+GET http://localhost:3000/directors/
+###
+
+GET http://localhost:3000/directors/6/movies/
+###
